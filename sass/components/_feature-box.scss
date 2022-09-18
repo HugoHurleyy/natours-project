@@ -1,0 +1,22 @@
+.feature-box{
+    background:rgba($color-white, .8);
+    padding: 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    transition: .5s all;
+    cursor:context-menu;
+    &__icon{
+        display: inline-block;
+        font-size: 6rem;
+        background-image:linear-gradient(to right bottom ,rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url("../img/nat-4.jpg");
+        background-clip: text;
+       -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.05);
+    }
+
+}

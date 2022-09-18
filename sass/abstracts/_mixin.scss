@@ -1,0 +1,25 @@
+@mixin btnStyles {
+    padding: 1.5rem 4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    border-radius: 5rem;
+    position: relative;
+    font-size: $default-font-size;
+    border: none;
+    cursor: pointer;
+}
+@mixin clearFix {
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+@mixin makeItCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
