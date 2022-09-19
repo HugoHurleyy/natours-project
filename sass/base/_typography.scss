@@ -17,6 +17,10 @@ body{
         letter-spacing: 3.5rem;
         display: block;
         animation: moveInLeft 1s ease-in-out;
+        @include respond(phone){
+            letter-spacing: 2rem;
+            font-size: 5rem;
+        }
     
     }
 
@@ -26,6 +30,9 @@ body{
         letter-spacing: 1.7rem;
         display: block;
         animation: moveInRight 1s ease-in-out;
+        @include respond(phone){
+            letter-spacing: .9rem;
+        }
     }
 }
 .heading-secondary{
@@ -41,6 +48,12 @@ body{
     &:hover{
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .2rem 1rem 2rem rgba($color-black, .2);
+    }
+    @include respond(tab-port){
+        font-size: 3rem;
+    }
+    @include respond(phone){
+        font-size: 2.5rem;
     }
 }
 .heading-tertiary{
