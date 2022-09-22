@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/icon-font.css">
+        <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
@@ -66,9 +66,29 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                        <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        <img 
+                        src="img/nat-1-large.jpg" 
+                        alt="Photo 1" 
+                        sizes="(max-width:900px) 15vw, (max-width:600px) 22vw, 300px" 
+                        srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                        class="composition__photo composition__photo--p1"
+                        >
+
+                        <img 
+                        src="img/nat-2-large.jpg" 
+                        alt="Photo 2" 
+                        sizes="(max-width:900px) 15vw, (max-width:600px) 22vw, 300px" 
+                        srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                        class="composition__photo composition__photo--p2"
+                        >
+
+                        <img 
+                        src="img/nat-3-large.jpg" 
+                        alt="Photo 3" 
+                        sizes="(max-width:900px) 15vw, (max-width:600px) 22vw, 300px" 
+                        srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                        class="composition__photo composition__photo--p3"
+                        >                        
                     </div>
                 </div>
             </div> 
@@ -241,7 +261,13 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+                            <img 
+                            src="img/nat-8.jpg" 
+                            alt="Person on a tour" 
+                            sizes="(max-width:900px) 22vw, 250px " 
+                            srcset="img/nat-8.jpg 2000w, img/nat-8-small.jpg 1000w"
+                            class="story__img"
+                            >
                             <figcaption class="story__caption">Mary Smith</figcaption>
                         </figure>
                         <div class="story__text">
@@ -258,7 +284,13 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
+                            <img 
+                            src="img/nat-9.jpg" 
+                            alt="Person on a tour" 
+                            sizes="(max-width:900px) 22w, 250px" 
+                            srcset="img/nat-9.jpg 2000w, img/nat-9-small.jpg 1000w" 
+                            class="story__img"
+                            >
                             <figcaption class="story__caption">Jack Wilson</figcaption>
                         </figure>
                         <div class="story__text">
@@ -326,7 +358,11 @@
 
         <footer class="footer">
             <div class="footer__logo-box u-center-text u-margin-bottom-big">
-                <img src="img/logo-green-2x.png" alt="Full Logo" class="footer__logo">
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x,img/logo-green-small-2x.png 2x" media="(max-width:37.5em)">
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full Logo">
+                </picture>
+                
             </div>
             <div class="row">
                 <div class="col-1-of-2">
